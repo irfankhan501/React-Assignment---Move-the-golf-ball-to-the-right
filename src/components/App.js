@@ -28,10 +28,10 @@ class App extends Component {
   }
   arrowKeyPressed(e) {
     if (e.keyCode == 39) {
-      const newPosi = this.state.posi + 50;
+      const newPosi = this.state.posi + 5;
       this.setState({
         posi: newPosi,
-        ballPosition: { left: newPosi + "px" },
+        ballPosition: { left: newPosi },
       });
      
     }
